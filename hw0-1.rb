@@ -48,7 +48,12 @@ end
 
 def sum_to_n? (array, n=0)
   
-  # Returns the sume of the array and integer.
-  return sum(array)+n
-  
+  # Returns the sum of largest 2 integers in array.
+  m = max_2_sum(array)
+ 
+  if m < n
+    return false
+  else
+    return true
+  end
 end
